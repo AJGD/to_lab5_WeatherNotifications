@@ -1,9 +1,9 @@
 public class Date {
-    int day;
-    int month;
-    int year;
-    int hour;
-    int minute;
+    private int day;
+    private int month;
+    private int year;
+    private int hour;
+    private int minute;
     public Date(int day, int month, int year, int hour, int minute){
         this.day = day;
         this. month= month;
@@ -14,6 +14,6 @@ public class Date {
 
     @Override
     public String toString() {
-        return day + "." + month + "." +year + "    " + hour + ":" + minute;
+        return day + "." + month + "." +year + "  " + hour + ":" + minute;
     }
 }

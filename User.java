@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class User {
-    private ArrayList<Channel> channelList;
+    protected ArrayList<Channel> channelList;
     private String pesel;
 
     public User(String pesel) {

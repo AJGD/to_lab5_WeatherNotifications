@@ -33,4 +33,9 @@ public class Channel {
     public ArrayList<Notification> getHistory() {
         return history;
     }
+
+    @Override
+    public String toString() {
+        return "<" + this.getName() + ">";
+    }
 }

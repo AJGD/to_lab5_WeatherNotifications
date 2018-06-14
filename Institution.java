@@ -11,7 +11,7 @@ public class Institution {
         for (Channel ch : channelList) {
             if (ch.getName().equals(name)) return ch;
         }
-        throw new RuntimeException();
+        throw new RuntimeException("No channel of that name found.");
     }
 
     public void sendNotification(String content, Date date, String... channelNames) {
@@ -21,7 +21,9 @@ public class Institution {
                 this.getChannel(name).sendNotification(notification);
             }
             catch(RuntimeException e)
-            {}
+            {
+                System.out.println(e.getMessage());
+            }
         }
     }
 
