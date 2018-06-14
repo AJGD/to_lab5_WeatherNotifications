@@ -5,7 +5,7 @@ public class HistoryLover extends User {
 
     public void displayHistoryOf(Channel channel, int historyDepth) {
         if (!channelList.contains(channel)) {
-            System.out.println("Not following this channel.");
+            System.out.println(channel.getName()+" - not following this channel.");
         } else {
             int size = channel.getHistory().size();
             int limit = (size < historyDepth) ? size : historyDepth;
